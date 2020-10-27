@@ -1,6 +1,6 @@
 Android
 PlayerPath?
-C:/Users/Ostap/Documents/crewProj/CrewProjectBL/BuildsApk/Build1.apk
+C:/Users/Ostap/Documents/crewProj/CrewProjectBL/BuildsApk/Build2.apk
 SceneListBegin?
 Assets/Scenes/CharacterTest.unity
 SceneListEnd?
