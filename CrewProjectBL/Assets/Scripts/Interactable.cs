@@ -7,13 +7,14 @@ public class Interactable : MonoBehaviour
 
     [SerializeField]
     private float maxWidth = 1.5f;
-    
     [SerializeField]
-    private float interactDelay = 0.5f;
+    private float minWidth = 1f;
+
+    public float interactDelay = 0.5f;
 
     private float lastTime;
     [SerializeField]
-    private float koef;
+    private float koef = 3f;
 
     public float MaxWidth
     {
@@ -23,13 +24,7 @@ public class Interactable : MonoBehaviour
         }
     }
 
-
-    public void Awake()
-    {
-        //GetComponent<Outline>().OutlineColor = GameAssets.instance.outlineColor;
-        //GetComponent<Outline>().OutlineMode = Outline.Mode.OutlineVisible;
-        //GetComponent<Outline>().OutlineWidth = 0;
-    }
+    
 
     public virtual void Interact()
     {
@@ -38,7 +33,7 @@ public class Interactable : MonoBehaviour
     public virtual void SetOutline(float distance, float maxRange, float minRange)
     {
         float width = koef*maxWidth*(1-(Mathf.Clamp(distance-minRange, minRange, maxRange-minRange) /maxRange));
-        if(width < 1)
+        if(width < minWidth)
         {
             width = 0;
         }
@@ -51,6 +46,7 @@ public class Interactable : MonoBehaviour
 
     public virtual void OnMouseDown()
     {
+        return;
         if (Time.time - lastTime > interactDelay)
         {
             if (GetComponent<Outline>().OutlineWidth > 1)

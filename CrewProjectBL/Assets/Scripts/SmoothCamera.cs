@@ -19,8 +19,15 @@ public class SmoothCamera : MonoBehaviour
         Vector3 forward = player.transform.forward * 10.0f;
         Vector3 needPos = player.transform.position - forward;
         needPos.y = cameraHeight;
-        transform.position = Vector3.SmoothDamp(transform.position, needPos,
-                                                ref velocity, 0.05f);
+        if (!PlayerController.instance.teleporting)
+        {
+            transform.position = Vector3.SmoothDamp(transform.position, needPos,
+                                                    ref velocity, 0.05f);
+        }
+        else
+        {
+            transform.position = needPos;
+        }
         transform.LookAt(player.transform);
     }
 

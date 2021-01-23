@@ -282,3 +282,5 @@ C:\Users\Ostap\Documents\crewProj\CrewProjectBL\obj\Debug\Assembly-CSharp.csproj
 C:\Users\Ostap\Documents\crewProj\CrewProjectBL\obj\Debug\Assembly-CSharp.csproj.CopyComplete
 C:\Users\Ostap\Documents\crewProj\CrewProjectBL\obj\Debug\Assembly-CSharp.dll
 C:\Users\Ostap\Documents\crewProj\CrewProjectBL\obj\Debug\Assembly-CSharp.pdb
+C:\Users\Ostap\Documents\crewProj\CrewProjectBL\Temp\bin\Debug\UnityEngine.SpatialTrackingModule.dll
+C:\Users\Ostap\Documents\crewProj\CrewProjectBL\Temp\bin\Debug\UnityEngine.SpatialTrackingModule.xml
