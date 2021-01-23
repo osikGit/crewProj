@@ -255,7 +255,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   outlineMode: 1
   outlineColor: {r: 1, g: 0.92855203, b: 0, a: 1}
-  outlineWidth: 2
+  outlineWidth: 0
   precomputeOutline: 0
   bakeKeys: []
   bakeValues: []
@@ -909,7 +909,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   outlineMode: 1
   outlineColor: {r: 0.986777, g: 1, b: 0.19339621, a: 1}
-  outlineWidth: 2
+  outlineWidth: 0
   precomputeOutline: 0
   bakeKeys: []
   bakeValues: []
@@ -1312,8 +1312,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 534005106}
-  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -47.17, y: 3.206, z: -6.69}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.22, y: 3.206, z: 10.36}
   m_LocalScale: {x: 1.3921655, y: 2.4764006, z: 0.34066}
   m_Children:
   - {fileID: 86661752}
@@ -1321,7 +1321,7 @@ Transform:
   - {fileID: 1415178789}
   m_Father: {fileID: 0}
   m_RootOrder: 14
-  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &544647706
 GameObject:
   m_ObjectHideFlags: 0
@@ -1688,7 +1688,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   outlineMode: 1
   outlineColor: {r: 0.986777, g: 1, b: 0.19339621, a: 1}
-  outlineWidth: 2
+  outlineWidth: 0
   precomputeOutline: 0
   bakeKeys: []
   bakeValues: []
@@ -1778,7 +1778,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 700721443}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -42.2, y: 1.88, z: -7.37}
+  m_LocalPosition: {x: 0.22, y: 1.88, z: 16.82}
   m_LocalScale: {x: 1.784, y: 1.784, z: 1.784}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1808,7 +1808,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 752558165}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -45.87, y: 1.88, z: -6.92}
+  m_LocalPosition: {x: -0.14, y: 1.88, z: 13.32}
   m_LocalScale: {x: 1.3921655, y: 2.4764006, z: 0.34066}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2852,7 +2852,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1169420915}
-  cameraHeight: 11
+  cameraHeight: 30
+  distance: 10
 --- !u!1 &1682177655
 GameObject:
   m_ObjectHideFlags: 0
@@ -3204,7 +3205,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   outlineMode: 1
   outlineColor: {r: 1, g: 0.92855203, b: 0, a: 1}
-  outlineWidth: 2
+  outlineWidth: 0
   precomputeOutline: 0
   bakeKeys: []
   bakeValues: []
@@ -3347,7 +3348,7 @@ PrefabInstance:
     - target: {fileID: 6587623931224965184, guid: e4b3570f89d99364483ce18c0372a33a,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -7.5700073
+      value: -13.54
       objectReference: {fileID: 0}
     - target: {fileID: 6587623931224965184, guid: e4b3570f89d99364483ce18c0372a33a,
         type: 3}

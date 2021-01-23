@@ -23,7 +23,6 @@ public class Interactable : MonoBehaviour
             return maxWidth;
         }
     }
-
     
 
     public virtual void Interact()
@@ -38,6 +37,14 @@ public class Interactable : MonoBehaviour
             width = 0;
         }
         GetComponent<Outline>().OutlineWidth = width;
+    }
+    public virtual void SetOutline(float value)
+    {
+        if (value < minWidth)
+        {
+            value = 0;
+        }
+        GetComponent<Outline>().OutlineWidth = value;
     }
     private void OnDrawGizmos()
     {

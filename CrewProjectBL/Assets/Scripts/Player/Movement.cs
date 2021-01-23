@@ -38,7 +38,7 @@ public class Movement : MonoBehaviour
 
         Vector3 result = new Vector3(joystick.Horizontal, 0, joystick.Vertical);
 
-        if (result != Vector3.zero)
+        if (result != Vector3.zero && !PlayerController.instance.teleporting)
         {
             meshTransform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(result), rotationSpeed*Time.deltaTime);
         }
@@ -51,7 +51,8 @@ public class Movement : MonoBehaviour
 
         Vector3 destination = new Vector3(horizontal * speed * Time.deltaTime, 0, vertical * speed * Time.deltaTime);
 
-        agent.Move(destination);
+        if(!PlayerController.instance.teleporting)
+            agent.Move(destination);
     }
     public void CheckMovement()
     {
@@ -60,13 +61,14 @@ public class Movement : MonoBehaviour
         
             Vector3 destination = new Vector3(horizontal*speed*Time.deltaTime, 0, vertical*speed * Time.deltaTime);
 
+        if (!PlayerController.instance.teleporting)
             agent.Move(destination);
 
         Vector2 direction = joystick.Direction;
 
         Vector3 result = new Vector3(horizontal, 0, vertical);
 
-        if (result != Vector3.zero)
+        if (result != Vector3.zero && !PlayerController.instance.teleporting)
         {
             meshTransform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(result), rotationSpeed * Time.deltaTime);
         }

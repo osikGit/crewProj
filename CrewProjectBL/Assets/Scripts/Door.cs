@@ -33,6 +33,7 @@ public class Door : Interactable
 
     public IEnumerator TeleportTo(Transform position)
     {
+        SetOutline(0);
         PlayerController.instance.GetComponent<NavMeshAgent>().enabled = false;
         PlayerController.instance.transform.position = position.position;
         PlayerController.instance.GetComponent<NavMeshAgent>().enabled = true;

@@ -8,6 +8,8 @@ public class SmoothCamera : MonoBehaviour
     public Transform player;
     [Range(3,30)]
     public float cameraHeight = 11f;
+    [Range(3, 30)]
+    public float distance = 10f;
     void Start()
     {
         
@@ -16,7 +18,7 @@ public class SmoothCamera : MonoBehaviour
     void Update()
     {
         Vector3 velocity = Vector3.zero;
-        Vector3 forward = player.transform.forward * 10.0f;
+        Vector3 forward = player.transform.forward * distance;
         Vector3 needPos = player.transform.position - forward;
         needPos.y = cameraHeight;
         if (!PlayerController.instance.teleporting)
